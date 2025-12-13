@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Animated Navigation Drawer – Next.js + GSAP
 
-First, run the development server:
+A modern animated navigation drawer built with **Next.js (App Router)** and **GSAP**, featuring smooth page transitions and expressive motion design.  
+Inspired by the interaction style and visual rhythm of [creativegiants.art](https://www.creativegiants.art/).
+
+---
+
+## ✨ Features
+
+- Animated navigation drawer with GSAP timelines
+- Smooth open / close transitions with staggered elements
+- Page transitions between routes
+- Built using Next.js App Router
+- Clean and minimal design inspired by creative studio websites
+- Fully client-side animations with optimized performance
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js** (App Router)
+- **React**
+- **GSAP (GreenSock Animation Platform)**
+- **Tailwind**
+- **TypeScript**
+
+---
+
+## 📁 Project Structure (Example)
+
+```bash
+📁naara-entertainment
+    ├── 📁public
+    |   ├── showreel.mp4    # Main Background Showreel
+    ├── 📁src
+    |   ├── 📁app
+    |   |   ├── 📁contact
+    |   |   ├── 📁news
+    |   |   ├── 📁process
+    |   |   ├── 📁projects
+    |   |   ├── favicon.ico
+    |   |   ├── globals.css
+    |   |   ├── layout.tsx
+    |   |   ├── page.tsx
+    |   └── 📁components
+    |       ├── Menu.tsx    # Animated Navigation Menu
+    ├── .gitignore
+    ├── bun.lock
+    ├── eslint.config.mjs
+    ├── next-env.d.ts
+    ├── next.config.ts
+    ├── package.json
+    ├── postcss.config.mjs
+    ├── README.md
+    └── tsconfig.json
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/harshshah6/gsap-navigation-menu.git
+cd gsap-navigation-menu
+````
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Run the development server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎬 Animations Overview
 
-## Learn More
+* **Navigation Drawer**
 
-To learn more about Next.js, take a look at the following resources:
+  * GSAP timeline controls open and close states
+  * Text and links animate with staggered reveals
+  * Overlay and background transitions enhance depth
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* **Page Transitions**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+  * Triggered on route change
+  * Uses layout-level animation wrappers
+  * Prevents layout jumps during navigation
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧠 Inspiration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is inspired by modern creative studio websites, particularly
+👉 **[https://www.creativegiants.art/](https://www.creativegiants.art/)**
+
+The goal was not to copy, but to **recreate the feel and interaction quality** using custom code and animations.
+
+---
+
+## 📌 Notes
+
+* Animations are handled on the client using `"use client"`
+* GSAP contexts are properly cleaned up to avoid memory leaks
+* The project is designed for learning, experimentation, and inspiration
+
+---
+
+## 📄 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+## 🙌 Acknowledgements
+
+* [GSAP](https://greensock.com/gsap/)
+* [Next.js](https://nextjs.org/)
+* [creativegiants.art](https://www.creativegiants.art/)
