@@ -61,7 +61,7 @@ export default function Menu() {
                         Menu
                     </button>
                 </div>
-                <video loop autoPlay src={"/showreel.mp4"} className='w-full fixed inset-0 -z-10 '></video>
+                <video loop autoPlay muted playsInline src={"/showreel.mp4"} className='w-full fixed inset-0 -z-10 '></video>
                 <div className="mix-blend-screen p-4 md:p-8 bg-white  backdrop-blur-2xl">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 307 68" fill="none" className="text-black">
                         <path d="M71.89 0.449951L68.24 67.04H79.15L79.43 52.52H81.7L81.98 67.04H92.92L89.37 0.449951H71.89ZM79.67 43.9799L80.15 18.5499L80.22 10.6H80.84L80.98 18.5499L81.5 43.9799H79.68H79.67Z" fill="currentColor"></path>
