@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Menu from "@/components/Menu";
+import SmoothScroll from "@/components/ScrollSmoother";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,11 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <Menu />
-        {children}
+        <SmoothScroll>
+          <div className="mt-[10vh] pb-[10vh]">
+            {children}
+          </div>
+        </SmoothScroll>
       </body>
     </html>
   );
